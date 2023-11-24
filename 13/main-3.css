@@ -1,0 +1,28 @@
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+}
+.grid {
+  background-color: #ddd;
+  padding: 20px;
+  margin: auto;
+  width: 800px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: auto repeat(2, 1fr) auto;
+  gap: 20px;
+  grid-auto-rows: 1fr auto ;
+}
+.grid div{
+    display: flex;
+    background-color: #2d2d2d;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}

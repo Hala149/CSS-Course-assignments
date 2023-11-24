@@ -1,0 +1,67 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div{
+    width: 50px;
+    height: 50px;
+    margin: 15% auto;
+    border-radius: 50%;
+    /* background-color: #eee; */
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+     border: 3px solid #e91e63;
+    border-top-color: transparent;
+    transform: rotate(25deg);
+    animation-name: rot;
+    animation-duration: 1s;
+    animation-delay: .5s;
+     animation-iteration-count: infinite;
+     animation-timing-function:linear;
+
+}
+div::before{
+   content: "";
+    width: 120%;
+    height: 120%;
+    border-radius: 50%;
+    border: 3px solid #2196f3;
+    border-bottom-color: transparent;
+    position: absolute;
+    z-index: -1;
+    top: -8px;
+    left: -7px;
+    /* transition: 0.2s;
+    transition-delay: 0.10s; */
+
+}
+ div::after{
+    content: "";
+    width: 140%;
+    height: 140%;
+    border-radius: 50%;
+    border: 3px solid  #fc9900;
+    border-left-color: transparent ;
+    position: absolute;
+    z-index: -2;
+    top:-12px;
+    left: -12px;
+    /* transition: 0.2s;
+    transition-delay: 0.5s; */
+
+}
+@keyframes rot {
+    to{
+        
+    transform: rotate(360deg);
+
+    }
+}
+div:hover{
+    animation-play-state: paused;
+}

@@ -1,0 +1,117 @@
+:root{
+   --display:flex;
+   --maincolor:#ddd;
+   --centerliz:center;
+   --mainpadding: 10px
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+*{
+    box-sizing: border-box;
+}
+.page{
+    background-color: #eeeeee ;
+    border: 10px solid white;
+    outline: 1px solid var(--maincolor);
+    padding: var(--mainpadding);
+}
+
+/* start Header */
+.header {
+    display: var(--display);
+    justify-content: space-between;
+
+}
+.header .logo{
+    background-color:var(--maincolor);
+    width: 10%;
+    height: 40px;
+    display: var(--display);
+    justify-content: var(--centerliz);
+    align-items: var(--centerliz);
+
+} 
+.header .links  {
+    background-color:var(--maincolor);
+    width: 88%;
+    height: 40px;
+    list-style: none;
+    margin-top: 0;
+    display: var(--display);
+    justify-content:flex-end;
+    align-items: var(--centerliz);
+
+}
+ul li{
+    margin: 20px 7px;
+}
+/* Ens Header */
+
+
+/* start main-area */
+.main-area{
+    display: var(--display);
+    justify-content: space-between;
+}
+.content{
+    background-color:var(--maincolor);
+    width: 58%;
+    height: 300px;
+    display: var(--display);
+    justify-content: flex-start;
+    align-items:flex-start;
+    padding: var(--mainpadding);
+
+
+}
+.sidebar{
+    background-color:var(--maincolor);
+    width: 40%;
+    height: 300px;
+    display: var(--display);
+    justify-content:flex-start;
+    padding: var(--mainpadding);
+
+
+
+
+}
+/* end main-area */
+
+/* start Footer */
+.footer{
+    display: var(--display);
+    margin-top: 20px;
+
+
+}
+.copyright{
+    background-color:var(--maincolor);
+    width: 50%;
+    height: 40px;
+    display: var(--display);
+    justify-content: flex-start;
+    align-items:flex-start;
+    padding: var(--mainpadding);
+    align-items: var(--centerliz);
+
+
+
+
+}
+.design{
+    background-color:var(--maincolor);
+    width: 50%;
+    height: 40px;
+    display: var(--display);
+    justify-content:flex-end;
+    padding: var(--mainpadding);
+    align-items: var(--centerliz);
+
+
+    
+
+}
+

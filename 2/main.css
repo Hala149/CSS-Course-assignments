@@ -1,0 +1,43 @@
+div{
+    display:inline-block ;
+    background-color: rgb(221, 221, 221);
+    margin: 5px;
+    padding: 10px;
+    
+}
+.assign-1-shape-1{
+    border: 5px ;
+    border-style:solid ;
+    border-color:red ;
+    outline: 5px solid black;
+}
+.assign-1-shape-2{
+    border: 5px ;
+    border-style:solid ;
+    border-color:blue green blue green ;
+    outline: 5px solid black;
+}
+.assign-1-shape-3{
+    border: 5px ;
+    border-style:dashed ;
+    border-color:red green blue yellow ;
+    outline: 5px solid black;
+}
+.do{
+    display: block;
+    width: 400px;
+    margin: 15px;
+}
+.assign-2-shape-1{
+    border-left: 5px solid hsl(340deg,82%,52%);
+    outline: rgb(221, 221, 221) solid 10px;
+}
+.assign-2-shape-2{
+    border-left: 5px solid hsl(340deg,82%,52%);
+    outline: rgb(221, 221, 221) solid 10px;
+    visibility: hidden;
+}
+.assign-2-shape-3{
+    border-left: 5px solid hsl(174deg,100%,29%);
+    outline: rgb(221, 221, 221) solid 10px;
+}

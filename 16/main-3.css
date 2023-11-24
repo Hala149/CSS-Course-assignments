@@ -1,0 +1,32 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div{
+    width: 50px;
+    height: 50px;
+    margin: 15% auto;
+    border-radius: 50%;
+    background-color: #eee;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+     border: 3px solid  black ;
+    border-top-color: transparent;
+    /* transform: rotate(25deg); */
+    animation: rot 1s infinite;
+         animation-timing-function:linear;
+
+    
+}
+
+
+@keyframes rot {
+    to{
+    transform: rotate(-360deg);
+    }
+}

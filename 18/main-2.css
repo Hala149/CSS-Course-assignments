@@ -1,0 +1,56 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+        padding: 0;
+}
+
+/* Task 3 */
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.parent div{
+    background-color: #eee;
+    /* width: 25%; */
+    text-align: center;
+    margin-bottom: 25px;
+}
+/* Small screens And Mobile */
+@media (min-width: 767px){
+.parent div{
+   width: calc(100% - 20px);
+}
+}
+/* Mediaum screens */
+@media (min-width: 992px){
+.parent div:first-child {
+   width: calc(100% - 20px);
+}
+.parent div{
+   width: calc((100% / 3) - 20px);
+}
+h1{ color: red;}
+}
+/* Large screens */
+@media (min-width: 1200px){
+.parent div:first-child  ,.parent div:last-child{
+   width: calc(100% - 20px);
+}
+.parent div{
+   width: calc(50% - 20px);
+}
+h1{ color: #009688;}   
+}
+
+
+
+
+

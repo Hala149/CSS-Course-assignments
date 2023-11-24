@@ -1,0 +1,70 @@
+.my{
+    
+    width: 800px;
+    background-color: #588792;
+
+    
+}
+.my div{
+    background-color: rgb(209, 212, 212);
+    height: 50px;
+    float: left;
+    text-align: center;
+    margin-top: 15px;
+    margin-left: 15px;
+    line-height: 3;
+
+}
+
+.one{
+    
+    width:calc((100% - 30px)/1) ;
+    /* margin-left: 15px; */
+
+
+}
+
+.two{
+    width: calc((100% - 60px)/3);
+
+
+}
+    
+.three{
+    width: calc((100% - 45px)/2);
+
+}
+.four{
+    width: calc((100% - 75px)/4);
+    margin-bottom: 15px;
+    
+}
+p.clearfix{
+    clear: both;
+}
+
+
+/* two */
+
+ .normal, .one-2 , .two-2 {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    color: black;
+}  
+.normal{
+    background-color: #588792; /* Get The Background From Image */
+}
+.one-2{
+    background-color: rgba(88, 136, 147, 0.1 ); /* Get The Background From Image */
+
+
+}
+.two-2{
+    background-color: #588792; /* Get The Background From Image */
+    opacity: 0.1 ;
+
+}
+

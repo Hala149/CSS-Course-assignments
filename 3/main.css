@@ -1,0 +1,20 @@
+.child .title{
+    color: red;
+}
+.parent span {
+    color:blue;
+}
+.title,
+p{
+    color:green;
+}
+
+.m{
+  background-color:red;
+  padding:10px;
+  margin:10px;
+  width: fit-content;
+
+  max-width: 400px;
+  
+}

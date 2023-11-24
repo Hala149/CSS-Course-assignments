@@ -1,0 +1,207 @@
+
+:root{
+    --maincolor:#ee2d1f;
+    --maincolor2:#009688;
+
+}
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.zero{
+    width: 150px;
+    height: 50px;
+    margin: 50px auto;
+    background-color: var(--maincolor);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 38px;
+    
+}
+.zero::before ,
+.zero::after {
+    content:"";
+    width: 100%;
+    height: 100%;
+    background-color: var(--maincolor);
+    position: absolute;
+    /* -webkit-transform: rotateZ(90deg); Safari */
+    z-index: -1;
+}
+.zero::before{
+    right: 0;
+    top: 0;
+  transform: skew(10deg, 10deg) ;
+}
+.zero::after{
+    bottom: 0;
+    left: 0;
+    transform: skew(-10deg, -10deg) ;
+}
+
+/* Task 2 */
+.one{
+    width: 150px;
+    height: 50px;
+    margin: 50px auto;
+    background-color: var(--maincolor2);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 38px;    
+}
+
+.one::before{
+    content:"";
+    width: 85%;
+    height: 100%;
+    background-color: var(--maincolor2);
+    position: absolute;
+    top: 0;
+    right: 45px;
+    transform: skew(10deg, 0) ;
+    z-index: -1;
+    
+
+}
+.one::after{
+    content:"";
+    width: 10%;
+    height: 100%;
+    background-color: var(--maincolor2);
+    position: absolute;
+    bottom: 0;
+    left: -45px;
+    transform: skew(10deg, -0) ;
+    z-index: -2;
+}
+
+/* Task-3 */
+.env{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    height: 200px;
+    margin: 100px auto 10px;
+    background-color:  gray;;
+    border-bottom: 5px solid black;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.env::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-bottom: 6px solid white;
+    border-right: 6px solid white;
+    position: absolute;
+    transform: rotate(45deg) scale(0.7);
+    top: -100px;
+    left: -3px;
+}
+.env::after{
+    content: "Elzero";
+    color: white;
+    position: absolute;
+    padding: 7px; 
+}
+/* Task-4 */
+.front-back , .front-back-2 {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    height: 200px;
+    margin:70px auto;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-size: 30px;
+    position: relative;
+    perspective: 200px;
+    background-color: #fa3664;
+    transform-style: preserve-3d;
+    /* perspective-origin: top center; */
+    transition: transform 1s;      
+}
+.front-back::before{
+    content: "Front";  
+    width: 100%;
+    height: 100%;  
+    position: absolute;
+     display: flex;
+    justify-content: center;
+    align-items:center;
+    top: 0;
+    left: 0;
+    background-color: #fa3664;
+
+
+}
+.front-back::after{
+    content: "Back";
+  width: 200px;
+    height: 200px;
+    background-color: #1692fc;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    z-index: -3;
+    transform: rotate3d(0,1,0, 180deg);
+    transition: transform 2s;
+    /* transition-delay: 1s; */
+        backface-visibility: hidden;
+
+}
+.front-back:hover{
+    transform: rotate3d(0,1,0, -180deg);
+}
+
+
+/*  */
+.front-back-2::before{
+     content: "Front";  
+    width: 100%;
+    height: 100%;  
+    position: absolute;
+     display: flex;
+    justify-content: center;
+    align-items:center;
+    top: 0;
+    left: 0;
+    background-color: #fa3664;
+            backface-visibility: hidden;
+        
+
+
+
+}
+.front-back-2::after{
+    content: "Back";
+  width: 200px;
+    height: 200px;
+    background-color: #1692fc;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: absolute;
+    z-index: -3;
+     backface-visibility: hidden;
+    transform: rotate3d(1,0,0, 180deg);
+
+
+    /* transition-delay: 1s; */
+}
+.front-back-2:hover{
+    transform: rotate3d(1,0,0, -180deg);
+    /* transform-origin: top center; */
+
+}

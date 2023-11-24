@@ -1,0 +1,6 @@
+
+
+/* task 4 */
+div:nth-of-type(n+3):nth-of-type(-n+5):not(:nth-last-of-type(-n+3)){
+    color: red;
+}

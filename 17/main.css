@@ -1,0 +1,17 @@
+/* task 1 */
+div[class="main red"]{
+    color: red;
+}
+
+
+/* task 2 */
+.parent :nth-child(2){
+ color: red;
+
+}
+
+/* task 3 */
+.parent :nth-of-type(4) > .baby{
+        color: red;
+
+}

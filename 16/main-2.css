@@ -1,0 +1,64 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+div{
+    width: 50px;
+    height: 50px;
+    margin: 15% auto;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+     border: 3px solid  #2196f3 ;
+    border-bottom-color: transparent;
+    animation: rot 1s linear;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+div::before{
+   content: "";
+    width: 120%;
+    height: 120%;
+    border-radius: 50%;
+    border: 3px solid  #fc9900 ;
+    border-bottom-color: transparent;
+    position: absolute;
+    z-index: -1;
+    top: -8px;
+    left: -7px;
+    animation: rot 1.5s linear infinite paused;
+
+}
+ div::after{
+    content: "";
+    width: 140%;
+    height: 140%;
+    border-radius: 50%;
+    border: 3px solid  black;
+    border-bottom-color: transparent ;
+    position: absolute;
+    z-index: -2;
+    top:-12px;
+    left: -12px;
+    animation: rot 2s linear .5s infinite paused;
+
+
+}
+@keyframes rot {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+    transform: rotate(360deg);
+    }
+}
+div:hover,
+div:hover::before,
+div:hover::after{
+    animation-play-state:running;
+}

@@ -1,0 +1,64 @@
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.layout{
+    height: 100vh;
+    background-color: #eee;
+    display: grid;
+    grid-template-columns: repeat(6 , 1fr);
+    grid-template-rows: 50px auto 50px;
+    grid-template-areas: 
+    "head head head head head head"
+    "sec sec sec sec sid sid"
+    "foot foot foot foot foot foot";
+    position: relative;
+    color: white;
+
+}
+header{
+    background-color:teal;
+    grid-area: head;
+}
+section{
+    background-color: tomato;
+    grid-area: sec;
+}
+aside {
+    background-color:gray ;
+    grid-area: sid;
+}
+footer {
+    background-color:lightseagreen;
+    grid-area: foot;
+}
+
+header::before{
+    content: "Header";
+    padding: 10px;
+    position: absolute;
+    top: 5px;
+   
+}
+section::before{
+    content: "Section";
+    padding: 10px;
+    position: absolute;
+    
+}
+aside::before {
+   content: "Side";
+    padding: 10px;
+    position: absolute;
+}
+footer::before {
+    content: "Footer";
+    padding: 10px;
+    position: absolute;
+        bottom: 5px;
+
+    
+}

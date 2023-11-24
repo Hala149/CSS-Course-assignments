@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+.parent{
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: bold; */
+    background-color: #eee ;
+    border: 10px solid white;
+    outline: 1px solid #009688;
+    width: 600px;
+    height: 300px ;
+    margin:100px  auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+
+}
+.parent div{
+    background-color:#009688;
+    color: white;
+    /* width: calc(94% / 3); */
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one{
+    align-self: flex-end;
+    flex: 0 1 80px;
+
+
+}
+.two{
+    align-self: flex-start;
+    width: 50%;
+    flex: 0 1 80px;
+
+    
+} 
+.three{
+    align-self: flex-end;
+    flex: 0 1 80px;
+
+}

@@ -1,0 +1,7 @@
+body{
+    font-size: 18px;
+}
+/* task 5 */
+div:nth-of-type(2) >:not(p){
+    color: red;
+}
